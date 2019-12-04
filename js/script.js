@@ -30,5 +30,10 @@ console.log('Gracz wybrał...: ' + playerInput);
 let playerMove = 'nieznany ruch';
 if(playerInput == 1){
     playerMove = '<strong>kamień</strong>';
-}
+} else if(playerInput == 2){
+    playerMove = '<strong>papier</strong>'
+    } else if(playerInput == 3){
+        playerMove = '<strong>nożyce</strong>'
+    } 
+
 printMessage('Twój ruch: ' + playerMove);
