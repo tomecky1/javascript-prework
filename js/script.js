@@ -58,4 +58,4 @@ if(computerMove == 'kamień' && playerMove == 'papier'){
     printMessage('Remis!');
 } else if(playerMove == 'nieznany ruch'){
     printMessage('nieznany ruch gracza');
-} else {'nieznany błąd'};
+} else printMessage('nieznany błąd');
