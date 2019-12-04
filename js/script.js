@@ -1,3 +1,12 @@
 let playerMove = 'papier';
-
-printMessage('Player one zagrał' + playerMove + "Jeśli ruch komputera to nożyce, player one przegrał!");
+printMessage('Player one zagrał ' + playerMove + ' Jeśli ruch komputera to nożyce, player one przegrał!');
+let randomFraction = Math.random();
+printMessage('Wylosowany ułamek to: '+randomFraction);
+let calculation = randomFraction * 3 + 1;
+printMessage('Wylosowany ułamek pomnożony przez 3 i dodany 1: '+calculation);
+let roundNumber = Math.floor(calculation);
+printMessage('Zaokrąglona liczba to: '+roundNumber);
+let randomNumber = Math.floor(Math.random()*3+1);
+console.log('Wylosowana liczba to: '+randomNumber);
+let randomNumber1 = Math.floor(Math.random()*12+8);
+printMessage('losowanie 11 -19 -> ' +randomNumber1);
