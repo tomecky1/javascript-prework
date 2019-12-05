@@ -44,3 +44,4 @@ let playerMove = getMoveName(playerInput);
 //     } 
 printMessage('Twój ruch: ' + playerMove);
 printMessage('Wynik gry: ' + displayResult(computerMove, playerMove));
+console.log('Ruchy graczy: ', computerMove, playerMove);
