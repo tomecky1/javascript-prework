@@ -18,7 +18,7 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('Ty wygrywasz!');
     } else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
         printMessage('Ty wygrywasz!');
-    } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
+    } else if(argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
         printMessage('Komputer wygrywa.');
     } else if(argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
         printMessage('Remis!');
