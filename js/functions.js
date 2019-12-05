@@ -7,7 +7,7 @@ function clearMessage(){
     document.getElementById('messages').innerHTML = '';
 }
 function displayResult(argComputerMove, argPlayerMove){
-    printMessage('Ja zagrałem, ' + argComputerMove + ', a Ty ' + argPlayerMove);
+    printMessage('Ja zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
     if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
         printMessage('Ty wygrywasz!');
     } else if(argComputerMove == 'papier' && argPlayerMove == 'kamień'){
