@@ -11,11 +11,11 @@ let randomNumber = Math.floor(Math.random()*3+1);
 console.log('Wylosowana liczba to: '+ randomNumber);
 function getMoveName(argMoveID){
     if(argMoveID == 1){
-        return 'kamień';
+        return stone;
     } else if(argMoveID == 2){
-        return 'papier';
+        return paper;
     } else if(argMoveID == 3){
-        return 'nożyce'
+        return scissors;
     } else {
         printMessage('Nie znam ruchu o ID ' + argMoveID + '.');
         return 'nieznany ruch';

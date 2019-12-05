@@ -1,3 +1,6 @@
+const stone = 'kamień';
+const paper = 'papier';
+const scissors = 'nożyce';
 function printMessage(msg){
     var div = document.createElement('div');
     div.innerHTML = msg;
@@ -8,23 +11,23 @@ function clearMessage(){
 }
 function displayResult(argComputerMove, argPlayerMove){
     printMessage('Ja zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-    if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
+    if(argComputerMove == stone && argPlayerMove == paper){
         printMessage('Ty wygrywasz!');
-    } else if(argComputerMove == 'papier' && argPlayerMove == 'kamień'){
+    } else if(argComputerMove == paper && argPlayerMove == stone){
         printMessage('Komputer wygrywa.');
-    } else if(argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
+    } else if(argComputerMove == scissors && argPlayerMove == paper){
         printMessage('Komputer wygrywa.');
-    } else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
+    } else if(argComputerMove == paper && argPlayerMove == scissors){
         printMessage('Ty wygrywasz!');
-    } else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
+    } else if(argComputerMove == scissors && argPlayerMove == stone){
         printMessage('Ty wygrywasz!');
-    } else if(argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
+    } else if(argComputerMove == stone && argPlayerMove == scissors){
         printMessage('Komputer wygrywa.');
-    } else if(argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
+    } else if(argComputerMove == stone && argPlayerMove == stone){
         printMessage('Remis!');
-    } else if(argComputerMove == 'papier' && argPlayerMove == 'papier'){
+    } else if(argComputerMove == paper && argPlayerMove == paper){
         printMessage('Remis!');
-    } else if(argComputerMove == 'nożyce' && argPlayerMove == 'nożyce'){
+    } else if(argComputerMove == scissors && argPlayerMove == scissors){
         printMessage('Remis!');
     } else if(argPlayerMove == 'nieznany ruch'){
         printMessage('nieznany ruch gracza');
