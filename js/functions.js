@@ -33,3 +33,6 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('nieznany ruch gracza');
     } else printMessage('nieznany błąd');    
 }
+function buttonClicked(){
+    printMessage('Button został kliknięty')
+}
