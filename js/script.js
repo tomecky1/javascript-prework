@@ -8,6 +8,7 @@ let randomNumber1 = Math.floor(Math.random()*11+9);
 printMessage('losowanie 11 -19 -> ' + randomNumber1);
 printMessage('<hr>');
 function playGame(playerInput){
+    let score = displayResult;
     clearMessage();
     let randomNumber = Math.floor(Math.random()*3+1);
     console.log('Wylosowana liczba to: '+ randomNumber);
@@ -29,7 +30,7 @@ function playGame(playerInput){
     console.log('Gracz wybrał: ' + playerInput);
     let playerMove = getMoveName(playerInput);
     printMessage('Twój ruch: ' + playerMove);
-    printMessage('Wynik gry: ' + displayResult(computerMove, playerMove)); //czemu funcja wyświetla się jako undefinied?
+    score(computerMove, playerMove);
     console.log('Ruchy graczy: ', computerMove, playerMove);
     printMessage('<hr>');
 }
