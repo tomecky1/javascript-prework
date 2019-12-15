@@ -1,18 +1,19 @@
-let randomFraction = Math.random();
-printMessage('Wylosowany ułamek to: '+ randomFraction);
-let calculation = randomFraction * 3 + 1;
-printMessage('Wylosowany ułamek pomnożony przez 3 i dodany 1: ' + calculation);
-let roundNumber = Math.floor(calculation);
-printMessage('Zaokrąglona liczba to: ' + roundNumber);
-let randomNumber1 = Math.floor(Math.random()*11+9);
-printMessage('losowanie 11 -19 -> ' + randomNumber1);
-printMessage('<hr>');
-function playGame(playerInput){
-    let score = displayResult;
+// let randomFraction = Math.random();
+// printMessage('Wylosowany ułamek to: '+ randomFraction);
+// let calculation = randomFraction * 3 + 1;
+// printMessage('Wylosowany ułamek pomnożony przez 3 i dodany 1: ' + calculation);
+// let roundNumber = Math.floor(calculation);
+// printMessage('Zaokrąglona liczba to: ' + roundNumber);
+// let randomNumber1 = Math.floor(Math.random()*11+9);
+// printMessage('losowanie 11 -19 -> ' + randomNumber1);
+{
+    printMessage('<hr>');
+    const playGame = function(playerInput){
+    const score = displayResult;
     clearMessage();
     let randomNumber = Math.floor(Math.random()*3+1);
     console.log('Wylosowana liczba to: '+ randomNumber);
-    function getMoveName(argMoveID){
+    const getMoveName = function(argMoveID){
         if(argMoveID == 1){
             return stone;
         } else if(argMoveID == 2){
@@ -33,10 +34,11 @@ function playGame(playerInput){
     score(computerMove, playerMove);
     console.log('Ruchy graczy: ', computerMove, playerMove);
     printMessage('<hr>');
+    }
+    const playButton1 = document.getElementById('play-stone');
+    playButton1.addEventListener('click', function(){playGame(1)});
+    const playButton2 = document.getElementById('play-paper');
+    playButton2.addEventListener('click', function(){playGame(2)});
+    const playButton3 = document.getElementById('play-scissors');
+    playButton3.addEventListener('click', function(){playGame(3)});
 }
-let playButton1 = document.getElementById('play-stone');
-playButton1.addEventListener('click', function(){playGame(1)('Guzik Kamień został kliknięty')});
-let playButton2 = document.getElementById('play-paper');
-playButton2.addEventListener('click', function(){playGame(2)('Guzik Papier został kliknięty')});
-let playButton3 = document.getElementById('play-scissors');
-playButton3.addEventListener('click', function(){playGame(3)('Guzik Nożyce został kliknięty')});
