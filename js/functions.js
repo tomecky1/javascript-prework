@@ -2,7 +2,7 @@ const stone = 'kamień';
 const paper = 'papier';
 const scissors = 'nożyce';
 function printMessage(msg){
-    let div = document.createElement('div');
+    const div = document.createElement('div');
     div.innerHTML = msg;
     document.getElementById('messages').appendChild(div);
 }
