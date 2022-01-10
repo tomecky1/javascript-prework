@@ -33,7 +33,7 @@ let computerMove = getMoveName(randomNumber);
 printMessage("Mój ruch to " + computerMove);
 let playerInput = prompt("Drogi graczu wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce");
 console.log("Gracz wpisał: " + playerInput);
-let playerMove = getMoveName(randomNumber);
+let playerMove = getMoveName(playerInput);
 
 // if (playerInput == 1){
 //     playerMove = "kamień"
