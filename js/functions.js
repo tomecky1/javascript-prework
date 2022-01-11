@@ -1,36 +1,38 @@
+const stone = 'kamień';
+const paper = 'papier';
+const scissors = 'nożyce';
 function printMessage(msg){
-	let div = document.createElement('div');
-	div.innerHTML = msg;
-	document.getElementById('messages').appendChild(div);
+    const div = document.createElement('div');
+    div.innerHTML = msg;
+    document.getElementById('messages').appendChild(div);
 }
-
-function clearMessages(){
-	document.getElementById('messages').innerHTML = '';
+function clearMessage(){
+    document.getElementById('messages').innerHTML = '';
 }
-
 function displayResult(argComputerMove, argPlayerMove){
-	console.log('moves:', argComputerMove, argPlayerMove);
-	printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-  	
-	if(argComputerMove == "kamień" && argPlayerMove == "papier"){
-		printMessage('Ty wygrywasz!');
-	} else if(argComputerMove == "papier" && argPlayerMove == "kamień"){
-		printMessage('Komputer wygrywa.');
-	} else if(argComputerMove == "nożyce" && argPlayerMove == "papier"){
-		printMessage('Komputer wygrywa.');
-	} else if(argComputerMove == "papier" && argPlayerMove == "nożyce"){
-		printMessage('Ty wygrywasz!');
-	} else if(argComputerMove == "nożyce" && argPlayerMove == "kamień"){
-		printMessage('Ty wygrywasz!');
-	} else if(argComputerMove == "kamień" && argPlayerMove == "nożyce"){
-		printMessage('Komputer wygrywa.');
-	} else if(argComputerMove == "kamień" && argPlayerMove == "kamień"){
-		printMessage('Remis!');
-	} else if(argComputerMove == "papier" && argPlayerMove == "papier"){
-		printMessage('Remis!');
-	} else if(argComputerMove == "nożyce" && argPlayerMove == "nożyce"){
-		printMessage('Remis!');
-	} else if(argPlayerMove == 'nieznany ruch'){
-		printMessage('nieznany ruch gracza');
-	} else printMessage('nieznany błąd');    
-  }
+    printMessage('Ja zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+    if(argComputerMove == stone && argPlayerMove == paper){
+        printMessage('Ty wygrywasz!');
+    } else if(argComputerMove == paper && argPlayerMove == stone){
+        printMessage('Komputer wygrywa.');
+    } else if(argComputerMove == scissors && argPlayerMove == paper){
+        printMessage('Komputer wygrywa.');
+    } else if(argComputerMove == paper && argPlayerMove == scissors){
+        printMessage('Ty wygrywasz!');
+    } else if(argComputerMove == scissors && argPlayerMove == stone){
+        printMessage('Ty wygrywasz!');
+    } else if(argComputerMove == stone && argPlayerMove == scissors){
+        printMessage('Komputer wygrywa.');
+    } else if(argComputerMove == stone && argPlayerMove == stone){
+        printMessage('Remis!');
+    } else if(argComputerMove == paper && argPlayerMove == paper){
+        printMessage('Remis!');
+    } else if(argComputerMove == scissors && argPlayerMove == scissors){
+        printMessage('Remis!');
+    } else if(argPlayerMove == 'nieznany ruch'){
+        printMessage('nieznany ruch gracza');
+    } else printMessage('nieznany błąd');    
+}
+function buttonClicked(){
+    printMessage('Button został kliknięty')
+}

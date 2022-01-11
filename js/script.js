@@ -1,46 +1,35 @@
-let randomFraction = Math.random();
-printMessage("Wylosowany ułamek to: " + randomFraction);
-let calculation = randomFraction * 3 + 1;
-printMessage("Wylosowany ułamek pomnożony przez 3 i dodane 1 = " + calculation);
-let roundNumber = Math.floor(calculation);
-printMessage("Wylosowana liczba z zakresu 1 do 3 to: " + roundNumber);
-
-printMessage('<hr>');
-let randomNumber = Math.floor(Math.random() * 3 + 1);
-console.log("Wylosowana liczba to: " + randomNumber);
-function getMoveName(argMoveId){
-    if (argMoveId == 1){
-      return 'kamień';
-    } else if (argMoveId == 2){
-        return "papier";
-    } else if (argMoveId == 3){
-        return "nożyce";
-    }
-    else {
-    printMessage('Nie znam ruchu o id ' + argMoveId + '.');
-    return 'nieznany ruch';
-    }
+{
+  printMessage('<hr>');
+  const playGame = function(playerInput){
+  const score = displayResult;
+  clearMessage();
+  const randomNumber = Math.floor(Math.random()*3+1);
+  console.log('Wylosowana liczba to: '+ randomNumber);
+  const getMoveName = function(argMoveID){
+      if(argMoveID == 1){
+          return stone;
+      } else if(argMoveID == 2){
+          return paper;
+      } else if(argMoveID == 3){
+          return scissors;
+      } else {
+          printMessage('Nie znam ruchu o ID ' + argMoveID + '.');
+          return 'nieznany ruch';
+      }
   }
-
-let computerMove = getMoveName(randomNumber);
-// if (randomNumber == 1) {
-//     computerMove = "kamień";
-// } else if (randomNumber == 2){
-//     computerMove = "papier";
-// } else if (randomNumber == 3){
-//     computerMove = "nożyce";
-// }
-printMessage("Mój ruch to " + computerMove);
-let playerInput = prompt("Drogi graczu wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce");
-console.log("Gracz wpisał: " + playerInput);
-let playerMove = getMoveName(playerInput);
-
-// if (playerInput == 1){
-//     playerMove = "kamień"
-// } else if (playerInput == 2){
-//     playerMove = "papier";
-// } else if (playerInput == 3){
-//     playerMove = "nożyce";
-// }
-printMessage("Twój ruch graczu to: " + playerMove);
-displayResult(computerMove, playerMove);
+  const computerMove = getMoveName(randomNumber);
+  printMessage('Mój ruch to: ' + computerMove);
+  console.log('Gracz wybrał: ' + playerInput);
+  const playerMove = getMoveName(playerInput);
+  printMessage('Twój ruch: ' + playerMove);
+  score(computerMove, playerMove);
+  console.log('Ruchy graczy: ', computerMove, playerMove);
+  printMessage('<hr>');
+  }
+  const playButton1 = document.getElementById('play-stone');
+  playButton1.addEventListener('click', function(){playGame(1)});
+  const playButton2 = document.getElementById('play-paper');
+  playButton2.addEventListener('click', function(){playGame(2)});
+  const playButton3 = document.getElementById('play-scissors');
+  playButton3.addEventListener('click', function(){playGame(3)});
+}
