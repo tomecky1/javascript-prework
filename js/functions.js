@@ -31,7 +31,7 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('Remis!');
     } else if(argPlayerMove == 'nieznany ruch'){
         printMessage('nieznany ruch gracza');
-    } else printMessage('nieznany błąd');    
+        } else printMessage('nieznany błąd');    
 }
 function buttonClicked(){
     printMessage('Button został kliknięty')
