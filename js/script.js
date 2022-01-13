@@ -1,11 +1,11 @@
 {
   printMessage('<hr>');
   const playGame = function(playerInput){
-  const score = displayResult;
-  clearMessage();
-  const randomNumber = Math.floor(Math.random()*3+1);
-  console.log('Wylosowana liczba to: '+ randomNumber);
-  const getMoveName = function(argMoveID){
+    const score = displayResult;
+    clearMessage();
+    const randomNumber = Math.floor(Math.random()*3+1);
+    console.log('Wylosowana liczba to: '+ randomNumber);
+    const getMoveName = function(argMoveID){
       if(argMoveID == 1){
           return stone;
         } else if(argMoveID == 2){
@@ -17,14 +17,14 @@
           return 'nieznany ruch';
         }
     }
-  const computerMove = getMoveName(randomNumber);
-  printMessage('Mój ruch to: ' + computerMove);
-  console.log('Gracz wybrał: ' + playerInput);
-  const playerMove = getMoveName(playerInput);
-  printMessage('Twój ruch: ' + playerMove);
-  score(computerMove, playerMove);
-  console.log('Ruchy graczy: ', computerMove, playerMove);
-  printMessage('<hr>');
+    const computerMove = getMoveName(randomNumber);
+    printMessage('Mój ruch to: ' + computerMove);
+    console.log('Gracz wybrał: ' + playerInput);
+    const playerMove = getMoveName(playerInput);
+    printMessage('Twój ruch: ' + playerMove);
+    score(computerMove, playerMove);
+    console.log('Ruchy graczy: ', computerMove, playerMove);
+    printMessage('<hr>');
   }
     const playButton1 = document.getElementById('play-stone');
     playButton1.addEventListener('click', function(){playGame(1)});
