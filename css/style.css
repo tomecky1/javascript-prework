@@ -1,3 +1,31 @@
+#play-paper {
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 0;
+  border-radius: 5%;
+  color: papayawhip;
+  background: burlywood;
+}
 
+#play-stone {
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 0;
+  border-radius: 5%;
+  background: slategray;
+  color: beige;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+#play-scissors {
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 0;
+  border-radius: 5%;
+  background: blueviolet;
+  color: gold;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0VBQ0EsU0FBQTtFQUNBLGlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxxQkFBQTtBQ0NGOztBREVBO0VBQ0UsZ0JBQUE7RUFDQSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxTQUFBO0VBQ0EsaUJBQUE7RUFDQSxxQkFBQTtFQUNBLFlBQUE7QUNDRjs7QURFQTtFQUNFLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0VBQ0EsU0FBQTtFQUNBLGlCQUFBO0VBQ0Esc0JBQUE7RUFDQSxXQUFBO0FDQ0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
