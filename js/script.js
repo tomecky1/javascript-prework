@@ -27,7 +27,7 @@ function playGame(playerInput){
   printMessage('<hr>');
 }
 document.getElementById('play-paper').addEventListener('click', function(){
-  printMessage('Guzik został kliknięty');
+  playGame(2);
 });
 document.getElementById('play-stone').addEventListener('click', function(){
   playGame(1);
