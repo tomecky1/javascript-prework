@@ -11,28 +11,25 @@ function clearMessage(){
 }
 function displayResult(argComputerMove, argPlayerMove){
     printMessage('Ja zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-    if(argComputerMove === stone && argPlayerMove === paper){
+    if(argComputerMove == stone && argPlayerMove == paper){
         printMessage('Ty wygrywasz!');
-    } else if(argComputerMove === paper && argPlayerMove === stone){
+    } else if(argComputerMove == paper && argPlayerMove == stone){
         printMessage('Komputer wygrywa.');
-    } else if(argComputerMove === scissors && argPlayerMove === paper){
+    } else if(argComputerMove == scissors && argPlayerMove == paper){
         printMessage('Komputer wygrywa.');
-    } else if(argComputerMove === paper && argPlayerMove === scissors){
+    } else if(argComputerMove == paper && argPlayerMove == scissors){
         printMessage('Ty wygrywasz!');
-    } else if(argComputerMove === scissors && argPlayerMove === stone){
+    } else if(argComputerMove == scissors && argPlayerMove == stone){
         printMessage('Ty wygrywasz!');
-    } else if(argComputerMove === stone && argPlayerMove === scissors){
+    } else if(argComputerMove == stone && argPlayerMove == scissors){
         printMessage('Komputer wygrywa.');
-    } else if(argComputerMove === stone && argPlayerMove === stone){
+    } else if(argComputerMove == stone && argPlayerMove == stone){
         printMessage('Remis!');
-    } else if(argComputerMove === paper && argPlayerMove === paper){
+    } else if(argComputerMove == paper && argPlayerMove == paper){
         printMessage('Remis!');
-    } else if(argComputerMove === scissors && argPlayerMove === scissors){
+    } else if(argComputerMove == scissors && argPlayerMove == scissors){
         printMessage('Remis!');
-    } else if(argPlayerMove === 'nieznany ruch'){
+    } else if(argPlayerMove == 'nieznany ruch'){
         printMessage('nieznany ruch gracza');
         } else printMessage('nieznany błąd');    
-}
-function buttonClicked(){
-    printMessage('Button został kliknięty')
 }
